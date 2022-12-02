@@ -1,0 +1,477 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #F7F8FA;
+    margin: 0;
+}
+
+/* .container{
+    margin: auto;
+    width: 80%;
+} */
+
+.date{
+    display: flex;
+    color: #CBD0D3;
+    margin: 20px 0;
+}
+
+.time{
+    font-style: italic;
+}
+
+.date svg{
+    margin-right: 10px;
+}
+
+.categorie{
+    font-variant: small-caps;
+    font-size: x-large;
+}
+
+p{
+    line-height: 30px;
+}
+
+.pink{
+    color: #FB6980;
+    font-variant: small-caps;
+}
+
+.grey{
+    color: #C1C5CB;
+}
+
+.bt{
+    display: inline;
+    background-color: #FB6980;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.bt:hover{
+    color: #FB6980;
+    background-color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-variant: small-caps;
+    font-size: xx-large;
+    font-weight: 800;
+    color:#474747;
+}
+
+h3{
+    font-weight: 800;
+    font-size: medium;
+    color:#474747;
+}
+
+.titrenav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow{
+    height: 24px;
+    width: 20%;
+    text-align: right;
+}
+
+.arrow svg{
+    width: 15px;
+    fill: #ECECEC;
+}
+
+.arrow .arrowright{
+    fill:#474747;
+    margin-left: 20%;
+}
+
+/* ///////////////////
+/////   HEADER   /////
+////////////////////*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    background-color: #F7F8FA;
+
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+    display:flex;
+    align-items: center;
+}
+
+li{
+    margin-left: 15px;
+    color: #9E9FA1;
+}
+
+li img{
+    margin: 0 20px 0 30px;
+}
+
+nav{
+    display: flex;
+}
+
+.sitename{
+    font-variant: small-caps;
+    font-size: larger;
+    margin-left: 20px;
+}
+
+.here{
+    color: #474747;
+}
+
+/* //////////////////////////
+/////   HOME - FIRST   //////
+///////////////////////////*/
+
+#home .first{
+    margin-top: 70px;
+    margin-bottom: 100px;
+    display: flex;
+    background-color: white;
+}
+
+#home .mea{
+    color: white;
+    position: relative;
+    z-index: 0;
+    width: 60%;
+}
+
+#home .first img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#home .dinfos{
+    width: 40%;
+}
+
+#home .mea .txtimg{
+    border-top: solid white 3px;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    right: 0;
+    margin: 0 14%;
+}
+
+#home .dinfos{
+    padding: 5%;
+}
+
+#home .paragraphe{
+    border-top: solid #ECECEC 3px;
+}
+
+/* //////////////////////////
+/////   HOME - SECOND   /////
+///////////////////////////*/
+
+#home .second{
+    margin: auto;
+    width: 85%;
+}
+
+#home .destination{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#home .second .tendanceenavant{
+    color: white;
+}
+
+#home .tendances{
+    position: relative;
+    z-index: 0;
+    margin-right: 50px;
+    margin-bottom: 80px;
+    width: 760px;
+    height: 430px;
+}
+
+#home .second .tendances img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#home .infotendance{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 1px;
+    padding: 0 50px 50px 50px;
+}
+
+#home .minarticle{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+    width: 360px;
+    height: 210px;
+}
+
+#home .second .minarticle img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ////////////////////////////
+/////   ARTICLES - FIRST  /////
+/////////////////////////////*/
+
+#articles .first{
+    margin: auto;
+    width: 85%;
+}
+
+#articles .first .tendanceenavant{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: white;
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+
+#articles .tendances{
+    position: relative;
+    z-index: 0;
+    margin-bottom: 40px;
+    width: 610px;
+    height: 350px;
+}
+
+#articles .first .tendances img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#articles .infotendance{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 1px;
+    padding: 0 50px 50px 50px;
+}
+
+/* ////////////////////////////
+/////   ARTICLES - SECOND /////
+/////////////////////////////*/
+
+#articles .second{
+    margin: auto;
+    width: 85%;
+    margin-bottom: 100px;
+}
+
+#articles .second .minarticle{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#articles .second .minarticle article{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 400px;
+    margin: 10px 10px 10px 0;
+    border-radius: 0 0 10px 10px;
+}
+
+#articles .second .minarticle article img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+#articles .second .minarticle article .basarticle{
+    padding: 20px;
+}
+
+/* //////////////////////////////////
+/////   ARTICLE COMPLET - FIRST /////
+///////////////////////////////////*/
+
+#articlecomplet{
+   color: white; 
+}
+
+#articlecomplet h1{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#articlecomplet .first{
+    position: relative;
+    z-index: 0;
+    margin-top: 70px;
+    margin-bottom: 100px;
+    height: 600px;
+}
+
+#articlecomplet .txtbaniere{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+    width: 100%;
+    height: 100%;
+}
+
+#articlecomplet .first img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#articlecomplet .auteurdate{
+    display: flex;
+    align-items: center;
+    font-weight: 800;
+}
+
+#articlecomplet .auteurdate svg{
+    margin: 10px;
+}
+
+/* ///////////////////////////////////
+/////   ARTICLE COMPLET - SECOND /////
+////////////////////////////////////*/
+
+#articlecomplet .infos h1{
+    color: black;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: xx-large;
+}
+
+#articlecomplet .infos{
+    width: 4000px;
+}
+
+#articlecomplet p{
+    color: black;
+    font-size: large;
+    padding: 0 20px;
+}
+
+#articlecomplet .grey{
+    color: #C1C5CB;
+    font-size: medium;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+#articlecomplet .ligne{
+    border-bottom: dashed 3px #C1C5CB;
+    width: 400px;
+}
+
+#articlecomplet .second{
+    display: flex;
+    margin: auto;
+    width: 75%;
+    margin-bottom: 100px;
+}
+
+#articlecomplet .texte{
+    border-left: solid #C1C5CB 3px;
+}
+
+/* ///////////////////
+/////   FOOTER   /////
+////////////////////*/
+
+footer{
+    background-color: #33363B;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #F7F8FA;
+}
+
+footer fieldset{
+    border: none;
+}
+
+footer input{
+    background-color: transparent;
+    outline: none;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+footer input[type="email"]{
+    border: solid white 2px;
+    width: 250px;
+    padding: 10px 20px;
+    color: white;
+}
+
+footer input[type="submit"]{
+    background-color: white;
+    border: solid white 2px;
+    padding: 8px 20px;
+    font-weight: 800;
+    color: #33363B;
+    cursor: pointer;
+}
+
+footer input[type="submit"]:hover{
+    color: white;
+    background-color: #33363B;
+}
